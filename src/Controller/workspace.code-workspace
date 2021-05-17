@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"name": "promotion",
+			"path": "../../promotion"
+		}
+	],
+	"settings": {}
+}

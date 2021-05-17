@@ -80,12 +80,8 @@ class PromotionController extends AbstractController
         return $this->redirectToRoute('promotion_index');
     }
    
-/**
-     * 
 
-    * @Route("/checkFlash", name="checkFlash_api", methods={"POST"})
-    */
-
+    #[Route('/checkFlash', name: "checkFlash_api", methods: ["POST"])]
    public function checkFlash(Request $request)
    {
        $id = $request->query->get('id');
@@ -105,7 +101,7 @@ class PromotionController extends AbstractController
  $response = array(
         "code" => 1,
         "id" => $flush.getId(),
-        "errors" => 'sorry ,id not flound',
+        "errors" => 'sorry ,id not found',
         
      );
      return new JsonResponse($response, Response::HTTP_NOT_FOUND);
